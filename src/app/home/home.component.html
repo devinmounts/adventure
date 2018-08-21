@@ -3,9 +3,9 @@
 <form>
   <input type="text" placeholder="Enter your Name" #newName>
   <input type="text" #newCharacteristics placeholder="Enter your characteristics, seperated by commas">
-<button 
-  (click)="submitForm(newName.value, newCharacteristics.value)" 
-  
-  >Make Player
+<button (click)="submitForm(newName.value, newCharacteristics.value); newName.value=''; newCharacteristics.value=''" >Make Player
 </button>
 </form>
+
+<a routerLink="scenarios/landing" ><button>Start Game</button></a>
+

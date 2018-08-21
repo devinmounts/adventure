@@ -1,0 +1,33 @@
+{
+   "scenarios": [
+       {
+           "title": "Landing Scenario",
+           "description": "Welcome to the game!  You've arrived at  the Farm. You see a barn, grazing fields, and a pond. Where would you like to explore?",
+           "choices": ["Barn", "Pond", "Grazing Fields"]
+       },
+       {
+           "title": "Barn",
+           "description": "Welcome to the barn! You see many tools and a tractor. You know that you need to plant seeds. Do you use the tractor or the handheld tools?",
+           "choices": [
+            "Tractor",
+            "Handheld Tools"
+        ]
+        },
+        {
+            "title": "Pond",
+            "description": "You come across a goose in the farm. What do you do? You could feed it or run away",
+            "choices": [
+                "Run Away",
+                "Feed The Goose"
+            ]
+        },
+        {
+            "title": "Grazing Fields",
+            "description": "You end up in the cow pasture. You know you have to get the cow back to the barn for milking. You can use the cattle dog, or push and pull them. What do you do?",
+            "choices": [
+                "Get Help From the Dog",
+                "Push and Pull Them "
+            ]
+        }
+    ] 
+}
