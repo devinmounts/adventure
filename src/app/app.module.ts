@@ -9,6 +9,7 @@ import { CurrentComponent } from './current/current.component';
 import { ChoicesComponent } from './choices/choices.component';
 import { HomeComponent } from './home/home.component';
 import { ScenarioComponent } from './scenario/scenario.component';
+import { PlayerDetailsComponent } from './player-details/player-details.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ScenarioComponent } from './scenario/scenario.component';
     CurrentComponent,
     ChoicesComponent,
     HomeComponent,
-    ScenarioComponent    
+    ScenarioComponent,
+    PlayerDetailsComponent    
   ],
   imports: [
     BrowserModule,
