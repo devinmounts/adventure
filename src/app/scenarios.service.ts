@@ -14,8 +14,8 @@ export class ScenariosService {
      return this.scenarios;
    }
 
-   getScenariosByTitle(title: string){
-     return this.database.object('scenarios/' + title)
+   getScenarioById(scenarioId: string){
+     return this.database.object('scenarios/' + scenarioId)
    }
 
 }

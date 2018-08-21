@@ -11,10 +11,6 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'scenarios/landing',
-        component: ScenarioComponent
-    },
-    {
         path: 'scenarios/:id',
         component: ScenarioComponent
     }

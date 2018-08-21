@@ -23,9 +23,5 @@ export class HomeComponent {
     this.playerService.addPlayer(newPlayer);
   }
 
-  goToLandingScenario() {
-    this.router.navigate(["landing", $key)
-  }
-
 }
 
