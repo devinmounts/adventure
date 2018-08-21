@@ -1,0 +1,11 @@
+<h1>Click here to begin the Farmenture!</h1>
+
+<form>
+  <input type="text" placeholder="Enter your Name" #newName>
+  <input type="text" #newCharacteristics placeholder="Enter your characteristics, seperated by commas">
+<button 
+  (click)="submitForm(newName.value, newCharacteristics.value)" 
+  
+  >Make Player
+</button>
+</form>
