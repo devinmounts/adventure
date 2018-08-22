@@ -1,5 +1,8 @@
-<p>
-  current works!
-</p>
-{{(scenarioToDisplay | async)?.title}}
+<h1>{{(scenarioToDisplay | async)?.title}}</h1>
+<h4>{{(scenarioToDisplay | async)?.description}}</h4>
 
+<div *ngFor="let choice of (scenarioToDisplay | async)?.choices">
+  <!-- <div *ngFor="let key of choice"> -->
+    <button (click)="goToScenarioByTitle(choice)">{{choice}}</button>
+  <!-- </div> -->
+</div>

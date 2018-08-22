@@ -4,6 +4,7 @@ import { Scenario } from '../models/scenario.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+// import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-current',
@@ -12,7 +13,7 @@ import { Location } from '@angular/common';
   providers: [ScenariosService]
 })
 export class CurrentComponent implements OnInit {
-scenarioId: string;
+scenarioId: number;
 scenarioToDisplay;
 
   constructor(
@@ -28,8 +29,10 @@ scenarioToDisplay;
  
 
   this.scenarioToDisplay = this.scenariosService.getScenarioById(this.scenarioId);
-  console.log(this.scenarioToDisplay);
-  
+  }
 
+  goToScenarioByTitle(choice) {
+    let tempScenario = this.scenariosService.getScenarioByTitle(choice)
+    console.log(this.scenariosService.getIdByTitle(choice))
   }
 }
